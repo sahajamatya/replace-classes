@@ -1,7 +1,7 @@
 # Sahaj Amatya, 1001661825
 import sys
 
-# Returns the file line as a list
+# listifyLines() returns the file line as a list
 
 
 def listifyLines(line):
@@ -11,7 +11,7 @@ def listifyLines(line):
     arr[len(arr) - 1] = arr[len(arr) - 1].replace('\n', '')
     return arr
 
-# Returns the file data as a 2D list
+# getFileData() returns the file data as a 2D list
 
 
 def getFileData(fileName):
@@ -23,7 +23,7 @@ def getFileData(fileName):
     inputFile.close()
     return fileData
 
-# Returns a sorted list of all unique classes in the file
+# getClasses() returns a sorted list of all unique classes in the file
 
 
 def getClasses(fileName):
@@ -37,7 +37,7 @@ def getClasses(fileName):
     inputFile.close()
     return sorted(classes)
 
-# Writes out a file with the specified substitutions
+# generateOutputFile() writes out a file with the specified substitutions
 
 
 def generateOutputFile(fileData, fileName):
